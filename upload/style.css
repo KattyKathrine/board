@@ -1,0 +1,229 @@
+/* 
+
+Вся гамма:
+   F6F8F2
+   E7EFDA
+   A4BA82
+   819D58
+   основа: CADAB2
+   
+   https://paletton.com/#uid=12r0u0k5TtH0NQr2UCb9Cpke2lk
+   
+ 
+*/
+
+
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: #CADAB2;
+margin: auto;
+}
+h2 {
+text-indent: 30px;
+color: #2F3C1C
+}
+h2.header {
+text-align: center;
+color: #2F3C1C
+}
+p {
+text-indent: 30px;
+margin-bottom: 0px;
+margin-top: 0px;
+text-align: justify
+    }
+div {
+margin: 0 auto 10px auto;
+#border: 1px solid #2F3C1C;
+background-color: #E7EFDA;
+#width: 700px;
+padding: 5px;
+border-radius: 5px;
+#max-width: 1500px;
+
+}
+
+div.main {
+margin: 0 auto;
+background-color: inherit;
+min-width: 800px;
+max-width: 1500px;
+padding: 0px;
+border: none
+width: 75%;
+
+}
+
+#main {
+    box-shadow: 0 0 3px 3px #A4BA82;
+    width: 85%;
+}
+
+div.zametki {
+float: right;
+width: 212px;
+background-color: inherit;
+font-size: 90%;
+padding: 0px;
+border: none
+}
+div.zam {
+margin: 0 auto 10px auto;
+border: 1px solid #2F3C1C;
+background-color: #83a550;
+padding: 5px;
+width: 200px;
+}
+div.left {
+float: left;
+width: 200px
+}
+
+.date {
+text-decoration: underline;
+margin-bottom: 16px;
+margin-top: 16px
+}
+.done {
+text-decoration: line-through
+}
+.important {
+text-decoration: underline;
+color: #9B1C03
+}
+.prim {
+font-size: 80%;
+margin: 0px
+}
+.event {
+margin-bottom: 16px;
+margin-top: 16px
+}
+.lp {
+color: #233C82;
+text-decoration: underline;
+}    
+a {
+color: #819D58
+} 
+a:hover {
+color: #48420A
+}
+ul {
+margin-left: -15px
+} 
+
+#header {
+    margin: 0 auto 40px auto;
+#    border: 1px solid #819D58;
+    background-color: #A4BA82;
+    padding: 10px;
+    text-align: center;
+#    max-width: 1000px;
+#    box-shadow: 0 0 7px 2px #819D58;
+    border-radius: 0;
+    width: 100%;
+}
+#header a {
+color: #F6F8F2
+} 
+
+#left {
+    float: left;
+    width: 10%;
+    box-shadow: 0 0 3px 3px #A4BA82;
+    margin-right: 0.5%;
+    padding: 1%;
+}
+
+#center {
+    box-shadow: 0 0 3px 3px #A4BA82;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    min-width: 900px;
+}
+
+#right {
+    float: right;
+    width: 220px;
+    box-shadow: 0 0 3px 3px #A4BA82;
+    
+}
+
+.pict {
+    float: left;
+    width: 100px;
+    padding: 0;
+    margin: 5px;
+
+}
+
+img.collection {
+    width: 100px;
+    float: center;
+    
+}    
+
+.unit {
+    
+    float: left;
+    width: 10%;
+    margin-right: 0.5%;
+    padding: 1%;
+    text-decoration-line: underline;
+    
+}
+
+#comments {
+
+    float: right;
+    width: 20%;
+    box-shadow: 0 0 3px 3px #A4BA82;
+    padding-bottom: 10px;
+
+}   
+
+#comments > p {
+
+    margin-top: 5px;
+
+}   
+
+.notes {
+    
+    float:left;
+    width: 60%
+    
+}
+
+.subtext {
+    
+    text-indent: 0;
+    font-size: 11pt;
+    
+}
+
+.block {
+    overflow: hidden;
+    font-family: cursive;
+    font-size: 18pt;
+    color: #2F3C1C;
+    
+}
+
+.notes > ul {
+    list-style-type: disc;
+        
+}
+
+@font-face {
+    font-family: Z003; /* Гарнитура шрифта */
+    src: url(files/Z003-MediumItalic.otf); /* Путь к файлу со шрифтом */
+   }
+   
+hr {
+    border: none; /* Убираем границу */
+    background-color: #819D58; /* Цвет линии */
+    height: 2px; /* Толщина линии */
+   }

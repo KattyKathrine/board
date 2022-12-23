@@ -1,0 +1,56 @@
+{% extends 'default.html' %} 
+
+
+{% block title %}
+Мои отклики
+{% endblock title %}
+
+{% load static %}
+
+
+{% block content %}
+    <h1> "Отклики" - {{  replies|length  }}</h1>
+    <hr>
+    <form action="" method="get">
+       {{ filterset.form.as_p }}
+       <input type="submit" value="Найти" />
+    </form>
+    <br>
+    {% for reply in replies %}
+    <div id="main">
+        <p><img src="{% static 'User.png' %}"> {{  reply.user_id  }}</p>
+        
+        <p>{{  reply.time|date:'M d Y'  }}, {{  reply.time|time:"H:i"  }}</p>
+        <br>
+        <p>{{  reply.body  }}</p>
+        <br>
+        <p>Объявление: <a href="http://127.0.0.1:8000/post/{{  reply.post_id.id  }}">{{  reply.post_id  }}</a></p>
+        {% if not reply.is_accepted %}
+        <p></p><button><a href="/reply/delete/?reply={{  reply.id  }}"> Удалить </a></button>
+        <button><a href="/reply/accept/?reply={{  reply.id  }}"> Принять </a></button></p>
+        {% endif %}
+    </div>
+    <br>
+    {% endfor %}
+
+    {% if page_obj.has_previous %}
+       <a href="?page=1">1</a>
+       {% if page_obj.previous_page_number != 1 %}
+           ...
+           <a href="?page={{ page_obj.previous_page_number }}">{{ page_obj.previous_page_number }}</a>
+       {% endif %}
+   {% endif %}
+
+   {# Информация о текущей странице #}
+   {{ page_obj.number }}
+
+   {# Информация о следующих страницах #}
+   {% if page_obj.has_next %}
+       <a href="?page={{ page_obj.next_page_number }}">{{ page_obj.next_page_number }}</a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           ...
+           <a href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+       {% endif %}
+   {% endif %}
+
+{% endblock content %}

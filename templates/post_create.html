@@ -1,0 +1,16 @@
+{% extends 'default.html' %}
+
+{% block title %}
+Создать пост
+{% endblock title %}
+
+{% block content %}
+<h1>Создать пост</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ myform.media }}
+    {{ form.as_p }}
+    <input type="submit" value="Save" />
+</form>
+{% endblock content %}

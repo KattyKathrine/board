@@ -1,0 +1,33 @@
+
+{% extends 'default.html' %}
+
+
+<!-- Название у нас будет Product -->
+{% block title %}
+Объявление
+{% endblock title %}
+{% load static %}
+<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+{% block content %}
+    <h1>{{  post.title  }}</h1>
+    <p><img src="{% static 'User.png' %}"> {{  post.user_id  }}</p>
+    <hr>
+    <p>{{  post.time|date:'d.m.Y' }}, {{  post.time|time:"H:i"  }} </p>
+    <br>
+    <p>{{  post.body|safe  }}</p>
+    <br>
+    <p>{{  post.category  }} </p>
+    <br>
+    {% if useris_authenticated %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>Добавить отклик</p>
+            <textarea name="body" rows="5" cols="33">
+            </textarea>
+
+            <input type="submit" value="Добавить">
+        </form>
+    {% endif %}
+
+    
+{% endblock content %}

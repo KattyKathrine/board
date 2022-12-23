@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Здравствуй, {{ username }}. Твой отклик принят:</h2>
+    <p>{{ reply.body|truncatechars:50 }} </p>
+    <p>Обращение: {{ reply.post_id.body|truncatechars:50 }} </p>
+
+</body>
+</html>

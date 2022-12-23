@@ -1,0 +1,120 @@
+/* 
+
+Вся гамма:
+   F6F8F2
+   E7EFDA
+   A4BA82
+   819D58
+   основа: CADAB2
+   
+   https://paletton.com/#uid=12r0u0k5TtH0NQr2UCb9Cpke2lk
+   
+ 
+*/
+
+
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: #CADAB2;
+margin: auto;
+}
+h2 {
+text-indent: 30px;
+color: #2F3C1C
+}
+h2.header {
+text-align: center;
+color: #2F3C1C
+}
+p {
+text-indent: 30px;
+margin-bottom: 0px;
+margin-top: 0px;
+text-align: justify
+    }
+div {
+margin: 0 auto 10px auto;
+#border: 1px solid #2F3C1C;
+background-color: #E7EFDA;
+#width: 700px;
+padding: 5px;
+border-radius: 5px;
+#max-width: 1500px;
+
+}
+
+div.main {
+margin: 0 auto;
+background-color: inherit;
+min-width: 800px;
+max-width: 1500px;
+padding: 0px;
+border: none
+width: 75%;
+
+}
+
+#main {
+    box-shadow: 0 0 3px 3px #A4BA82;
+    width: 85%;
+}
+ 
+a {
+color: #819D58
+} 
+a:hover {
+color: #48420A
+}
+ul {
+margin-left: -15px
+} 
+
+#header {
+    margin: 0 auto 40px auto;
+#    border: 1px solid #819D58;
+    background-color: #A4BA82;
+    padding: 10px;
+    text-align: center;
+#    max-width: 1000px;
+#    box-shadow: 0 0 7px 2px #819D58;
+    border-radius: 0;
+    width: 100%;
+}
+#header a {
+color: #F6F8F2
+} 
+
+#center {
+    box-shadow: 0 0 3px 3px #A4BA82;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    min-width: 900px;
+}
+
+#sidebar {
+
+    float: right;
+    width: 20%;
+    box-shadow: 0 0 3px 3px #A4BA82;
+    padding-bottom: 10px;
+
+}   
+
+#sidebar > p {
+
+    margin-top: 5px;
+
+}   
+
+
+@font-face {
+    font-family: Z003; /* Гарнитура шрифта */
+    src: url(files/Z003-MediumItalic.otf); /* Путь к файлу со шрифтом */
+   }
+   
+hr {
+    border: none; /* Убираем границу */
+    background-color: #819D58; /* Цвет линии */
+    height: 2px; /* Толщина линии */
+   }
